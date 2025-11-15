@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Reiknivél 2</title>
+  </head>
+  <body>
+    <section>
+      <div class="calculator">
+        <div id="screen">
+            <form id="myForm">
+          <input id="display" name="display" /></form>
+        </div>
+        <div class="buttonbody">
+          <button class="button" id="one" onclick="calcnum(1)">1</button>
+          <button class="button" id="two" onclick="calcnum(2)">2</button>
+          <button class="button" id="three" onclick="calcnum(3)">3</button>
+          <button class="button" id="four" onclick="calcnum(4)">4</button>
+          <button class="button" id="five" onclick="calcnum(5)">5</button>
+          <button class="button" id="six" onclick="calcnum(6)">6</button>
+          <button class="button" id="seven" onclick="calcnum(7)">7</button>
+          <button class="button" id="eight" onclick="calcnum(8)">8</button>
+          <button class="button" id="nine" onclick="calcnum(9)">9</button>
+          <button class="button" id="zero" onclick="calcnum(0)">0</button>
+
+          <button class="button" id="clearDisplay" onclick="clearDisplay()">C</button>
+
+          <button class="button" id="plus" onclick="operation('+')">+</button>
+          <button class="button" id="minus" onclick="operation('-')">-</button>
+          <button class="button" id="multiply" onclick="operation('*')">*</button>
+          <button class="button" id="divide" onclick="operation('/')">/</button>
+
+          <button class="button" id="equal" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </section>
+     <section id="links">
+        <a href="/index.html">Taka 1</a>
+        <a href="/calc.html">Taka 2</a>
+        <a href="/evil.html">Evil calc</a>
+    </section>
+
+    <script src="calcscript.js"></script>
+  </body>
+</html>

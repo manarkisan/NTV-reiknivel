@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Reiknivél 2</title>
+  </head>
+  <body>
+    <section>
+      <div class="calculator">
+        <div id="screen">
+            <form id="myForm">
+          <input id="display" name="display" /></form>
+        </div>
+        <div class="buttonbody">
+          <button class="button" id="one" onclick="calcnum(getRandomInt())">1</button>
+          <button class="button" id="two" onclick="calcnum(getRandomInt())">2</button>
+          <button class="button" id="three" onclick="calcnum(getRandomInt())">3</button>
+          <button class="button" id="four" onclick="calcnum(getRandomInt())">4</button>
+          <button class="button" id="five" onclick="calcnum(getRandomInt())">5</button>
+          <button class="button" id="six" onclick="calcnum(getRandomInt())">6</button>
+          <button class="button" id="seven" onclick="calcnum(getRandomInt())">7</button>
+          <button class="button" id="eight" onclick="calcnum(getRandomInt())">8</button>
+          <button class="button" id="nine" onclick="calcnum(getRandomInt())">9</button>
+          <button class="button" id="zero" onclick="calcnum(getRandomInt())">0</button>
+
+          <button class="button" id="clearDisplay" onclick="clearDisplay()">C</button>
+
+          <button class="button" id="plus" onclick="operation('+')">+</button>
+          <button class="button" id="minus" onclick="operation('-')">-</button>
+          <button class="button" id="multiply" onclick="operation('*')">*</button>
+          <button class="button" id="divide" onclick="operation('/')">/</button>
+
+          <button class="button" id="equal" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </section>
+    <section style="display: flex; justify-content: center; align-items: center; margin-top: 10px; color:rgb(37, 243, 181); ">
+        <h2>Hvað er 2 + 2 = ?</h2>
+        <p style="display: flex; justify-content: center;">Pikkaðu inn tölurnar með músinni.</p>
+    </section>
+
+     <section id="links">
+        <a href="/index.html">Taka 1</a>
+        <a href="/calc.html">Taka 2</a>
+        <a href="/evil.html">Evil calc</a>
+    </section>
+    <script src="calcscript.js"></script>
+    <script>
+        // evil script
+        function getRandomInt(onclick) {
+            return Math.floor(Math.random() * 10);
+            console.log(getRandomInt(3))
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Reiknivél</title>
+</head>
+<body>
+    <section class="calculator">
+        <div id="screen">
+            <input id="display"  name="display"/>
+        </div>
+        <div class="buttonbody">
+       
+        <button class="button" id="one" onclick="calcnum, display.value += '1' ">1</button>
+        <button class="button" id="two" onclick="calcnum, display.value += '2' ">2</button>
+        <button class="button" id="three" onclick="calcnum, display.value += '3' ">3</button>
+        <button class="button" id="four" onclick="calcnum, display.value += '4' ">4</button>
+        <button class="button" id="five" onclick="calcnum, display.value += '5' ">5</button>
+        <button class="button" id="six" onclick="calcnum, display.value += '6' ">6</button>
+        <button class="button" id="seven" onclick="calcnum, display.value += '7' ">7</button>
+        <button class="button" id="eight" onclick="calcnum, display.value += '8' ">8</button>
+        <button class="button" id="nine" onclick="calcnum, display.value += '9' ">9</button>
+        <button class="button" id="zero" onclick="calcnum, display.value += '0' ">0</button>
+        <button class="operationbtn" id="plus" onclick="operation, display.value += '+' ">+</button>
+        <button class="operationbtn" id="minus" onclick="operation, display.value += '-' ">-</button>
+        <button class="operationbtn" id="multiply" onclick="operation, display.value += '*' ">*</button>
+        <button class="operationbtn" id="divide" onclick="operation, display.value += '/' ">/</button>
+        <button class="operationbtn" id="equal" onclick="operation, display.value = eval(display.value) ">=</button>
+         <button class="clearbtn" id="clearDisplay" onclick="clear, display.value = '' ">C</button>
+</div>
+    </section>
+    <section id="links">
+        <a href="/index.html">Taka 1</a>
+        <a href="/calc.html">Taka 2</a>
+        <a href="/evil.html">Evil calc</a>
+    </section>
+
+    <script src="calcscript.js"></script>
+
+    <script> const multiply = (x, y) => {
+     return x * y;
+ };
+ console.log(multiply(2, 4));</script>
+</body>
+</html>
+
+
+
+<!-- https://www.youtube.com/watch?v=cGgLHJGyS34 -->
