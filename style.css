@@ -80,6 +80,11 @@ button {
   margin: 3px;
 }
 
+button:hover {
+  text-shadow: 2px 2px 2px rgb(59, 2, 85), 0px 0px 7px rgb(247, 245, 229);
+  /* text-transform: translateY(-5px) scale(5); */
+}
+
 #one {
   display: grid;
   grid-area: 4/1/5/2;
